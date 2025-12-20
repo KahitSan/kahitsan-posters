@@ -1,7 +1,7 @@
-import ateneoLogo from '../assets/images/community/Ateneo.png'
-import uapsaLogo from '../assets/images/community/UAPSA BISCAST Logo.png'
-import acesLogo from '../assets/images/community/ACES_LOGO.png'
-import uapgaLogo from '../assets/images/community/UAPGA CAMARINES-TERM LOGO.png'
+import ateneoLogo from '@assets/images/community/Ateneo.png'
+import uapsaLogo from '@assets/images/community/UAPSA BISCAST Logo.png'
+import acesLogo from '@assets/images/community/ACES_LOGO.png'
+import uapgaLogo from '@assets/images/community/UAPGA CAMARINES-TERM LOGO.png'
 
 import type { CommunityData } from '../types/community'
 

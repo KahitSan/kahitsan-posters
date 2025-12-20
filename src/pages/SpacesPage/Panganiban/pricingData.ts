@@ -1,9 +1,9 @@
 // Import workspace images
-import entranceAreaImage from '../../../assets/images/panganiban/entrance-area.jpg'
-import innerAreaImage from '../../../assets/images/panganiban/inner-area.jpg'
-import callBoothImage from '../../../assets/images/panganiban/call-booth.jpg'
-import allAccessMembershipImage from '../../../assets/images/panganiban/all-access-membership.jpg'
-import wholeInnerAreaImage from '../../../assets/images/panganiban/whole-inner-area.jpg'
+import entranceAreaImage from '@assets/images/panganiban/entrance-area.jpg'
+import innerAreaImage from '@assets/images/panganiban/inner-area.jpg'
+import callBoothImage from '@assets/images/panganiban/call-booth.jpg'
+import allAccessMembershipImage from '@assets/images/panganiban/all-access-membership.jpg'
+import wholeInnerAreaImage from '@assets/images/panganiban/whole-inner-area.jpg'
 
 export const PricingType = {
   NONE: 'none',
