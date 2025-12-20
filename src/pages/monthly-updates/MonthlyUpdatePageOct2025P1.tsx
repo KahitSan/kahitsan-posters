@@ -1,8 +1,8 @@
 import { createSignal, createMemo, Show, For, onMount } from 'solid-js'
 import { useSearchParams } from '@solidjs/router'
-import logoLight from '../../assets/logo.png'
-import logoDark from '../../assets/logo.png'
-import uapsaLogo from '../../assets/images/community/UAPSA BISCAST Logo.png'
+import logoLight from '@assets/logo.png'
+import logoDark from '@assets/logo.png'
+import uapsaLogo from '@assets/images/community/UAPSA BISCAST Logo.png'
 
 interface Announcement {
   id: number

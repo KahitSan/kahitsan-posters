@@ -1,8 +1,8 @@
 import { createSignal, createMemo, Show, onMount } from 'solid-js'
 import { useSearchParams } from '@solidjs/router'
-import logoLight from '../../assets/logo.png'
-import logoDark from '../../assets/logo.png'
-import uapgaLogo from '../../assets/images/community/UAPGA CAMARINES-TERM LOGO.png'
+import logoLight from '@assets/logo.png'
+import logoDark from '@assets/logo.png'
+import uapgaLogo from '@assets/images/community/UAPGA CAMARINES-TERM LOGO.png'
 
 interface Announcement {
   id: number

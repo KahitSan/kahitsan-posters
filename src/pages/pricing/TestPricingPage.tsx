@@ -1,8 +1,8 @@
 import { Clock, Sparkles, Users, Star } from 'lucide-solid'
 import { pricingData, additionalPricingData, type PricingOption, formatDuration, PricingType } from '../SpacesPage/Panganiban/pricingData'
 import { Show, createMemo } from 'solid-js'
-import logoLight from '../../assets/LOGO-kahitsan.v4.svg'
-import logoDark from '../../assets/logo.png'
+import logoLight from '@assets/LOGO-kahitsan.v4.svg'
+import logoDark from '@assets/logo.png'
 import { communityData } from '../../data/community'
 import { useSearchParams } from '@solidjs/router'
 

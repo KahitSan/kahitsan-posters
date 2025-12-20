@@ -1,7 +1,7 @@
 import { createSignal, createMemo, onMount } from 'solid-js'
 import { useSearchParams } from '@solidjs/router'
-import logoLight from '../../assets/logo.png'
-import logoDark from '../../assets/logo.png'
+import logoLight from '@assets/logo.png'
+import logoDark from '@assets/logo.png'
 
 export default function EarlyClosingDec21AnnouncementPage() {
   const [searchParams] = useSearchParams()

@@ -2,7 +2,7 @@ import { Clock, Sparkles, Users, Star } from 'lucide-solid'
 import { pricingData, additionalPricingData, type PricingOption, formatDuration, PricingType } from '../SpacesPage/Panganiban/pricingData'
 import { Show, createMemo } from 'solid-js'
 import { useSearchParams } from '@solidjs/router'
-import logo from '../../assets/logo.png'
+import logo from '@assets/logo.png'
 import { communityData } from '../../data/community'
 
 // Icon mapping
