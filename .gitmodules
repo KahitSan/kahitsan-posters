@@ -1,0 +1,3 @@
+[submodule "app/pillar-ui"]
+	path = app/pillar-ui
+	url = git@github.com:KahitSan/pillar-ui.git
