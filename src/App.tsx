@@ -2,6 +2,7 @@ import type { Component } from 'solid-js'
 import { Router, Route } from '@solidjs/router'
 import MonthlyUpdateOct2025P1 from './pages/monthly-updates/MonthlyUpdatePageOct2025P1'
 import MonthlyUpdateOct2025P2 from './pages/monthly-updates/MonthlyUpdatePageOct2025P2'
+import MonthlyUpdateNov2025P1 from './pages/monthly-updates/MonthlyUpdatePageNov2025P1'
 import TestPricing from './pages/pricing/TestPricingPage'
 import PricingCompact from './pages/pricing/PricingCompactPanganiban'
 import EarlyClosingDec21 from './pages/announcements/EarlyClosingDec21AnnouncementPage'
@@ -12,6 +13,7 @@ const App: Component = () => {
       {/* Monthly Updates */}
       <Route path="/monthly-update/oct-2025-p1" component={MonthlyUpdateOct2025P1} />
       <Route path="/monthly-update/oct-2025-p2" component={MonthlyUpdateOct2025P2} />
+      <Route path="/monthly-update/nov-2025-p1" component={MonthlyUpdateNov2025P1} />
 
       {/* Pricing */}
       <Route path="/pricing/panganiban" component={TestPricing} />
@@ -31,6 +33,7 @@ const App: Component = () => {
               <ul class="list-disc list-inside space-y-1 text-zinc-300">
                 <li>/monthly-update/oct-2025-p1</li>
                 <li>/monthly-update/oct-2025-p2</li>
+                <li>/monthly-update/nov-2025-p1</li>
                 <li>/pricing/panganiban</li>
                 <li>/pricing/compact-panganiban</li>
                 <li>/announcement/early-closing-dec-21</li>

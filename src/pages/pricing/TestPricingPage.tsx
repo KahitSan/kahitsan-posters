@@ -75,11 +75,6 @@ function PricingCard(props: { option: PricingOption; isDark: boolean }) {
               <h3 class={`text-lg font-bold mb-1 ${props.isDark ? 'text-white' : 'text-gray-900'}`}>
                 {props.option.name}
               </h3>
-              {props.option.description && (
-                <p class={`text-sm ${props.isDark ? 'text-zinc-500' : 'text-gray-600'}`}>
-                  {props.option.description}
-                </p>
-              )}
             </div>
           </div>
 
@@ -100,7 +95,7 @@ function PricingCard(props: { option: PricingOption; isDark: boolean }) {
                 >
                   <div class="flex flex-col items-center justify-center h-full pr-2 pb-2">
                     <div class={`text-xs uppercase tracking-wider mb-1 font-bold ${props.isDark ? 'text-zinc-400' : 'text-gray-700'}`}>
-                      Partner
+                      Org Partner
                     </div>
                     <div class={`text-3xl sm:text-4xl font-bold ${props.isDark ? 'gradient-text' : 'gradient-text-light'}`}>
                       ₱{props.option.mainPricing.partnerPrice.toLocaleString()}
@@ -256,7 +251,6 @@ export default function TestPricingPage() {
   const logo = createMemo(() => isDark() ? logoDark : logoLight)
   const bgColor = createMemo(() => isDark() ? '#0a0a0a' : '#ffffff')
   const textColor = createMemo(() => isDark() ? 'text-white' : 'text-gray-900')
-  const textSecondary = createMemo(() => isDark() ? 'text-zinc-300' : 'text-gray-700')
   const textTertiary = createMemo(() => isDark() ? 'text-zinc-400' : 'text-gray-600')
 
   return (
@@ -296,7 +290,7 @@ export default function TestPricingPage() {
         <div class="relative z-10">
           {/* Header */}
           <div class="max-w-4xl mx-auto text-center mb-16 px-4">
-            <div class="flex items-center justify-center gap-4 mb-6">
+            <div class="flex items-center justify-center gap-4">
               <img
                 src={logo()}
                 alt="Kahit San Logo"
@@ -306,11 +300,7 @@ export default function TestPricingPage() {
                 Choose Your <span class={isDark() ? 'gradient-text' : 'gradient-text-light'}>Workspace</span>
               </h2>
             </div>
-            <p class={`text-lg max-w-3xl mx-auto leading-relaxed ${textSecondary()}`}>
-              From productive individual areas to private call booths. 24/7 access with free unlimited coffee,
-              high-speed internet, and power outlets at every table.
-            </p>
-            <div class="flex justify-center gap-8 mt-8 text-sm">
+              <div class="flex justify-center gap-8 mt-1 text-sm">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-green-400"></div>
                 <span class={textTertiary()}>Starts at 4 hours</span>
@@ -373,7 +363,7 @@ export default function TestPricingPage() {
                 Memberships & Private Spaces
               </span>
             </div>
-            <div class="flex items-center justify-center gap-4 mb-4">
+            <div class="flex items-center justify-center gap-4">
               <img
                 src={logo()}
                 alt="Kahit San Logo"
@@ -383,11 +373,7 @@ export default function TestPricingPage() {
                 Premium <span class={isDark() ? 'gradient-text' : 'gradient-text-light'}>Access</span>
               </h3>
             </div>
-            <p class={`text-lg max-w-3xl mx-auto leading-relaxed ${textSecondary()}`}>
-              24/7 biometric access for unlimited productivity, or reserve our entire inner area
-              for your team events and workshops. No front desk hassle required.
-            </p>
-            <div class="flex justify-center gap-8 mt-6 text-sm">
+              <div class="flex justify-center gap-8 mt-1 text-sm">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-purple-400"></div>
                 <span class={textTertiary()}>24/7 biometric access</span>
@@ -425,7 +411,7 @@ export default function TestPricingPage() {
         <div class="relative z-10">
           {/* Section Header */}
           <div class="max-w-4xl mx-auto text-center mb-12">
-            <div class="flex items-center justify-center gap-4 mb-8">
+            <div class="flex items-center justify-center gap-4">
               <img
                 src={logo()}
                 alt="Kahit San Logo"
@@ -435,10 +421,7 @@ export default function TestPricingPage() {
                 Partner <span class={isDark() ? 'gradient-text' : 'gradient-text-light'}>Organizations</span>
               </h3>
             </div>
-            <p class={`text-lg max-w-3xl mx-auto leading-relaxed ${textSecondary()}`}>
-              Members of these organizations enjoy exclusive discounts on all workspace bookings
-            </p>
-            <div class="flex justify-center gap-8 mt-6 text-sm">
+                <div class="flex justify-center gap-8 mt-1 text-sm">
               <div class="flex items-center gap-2">
                 <div class="w-2 h-2 rounded-full bg-green-400"></div>
                 <span class={textTertiary()}>20% discount for members</span>
