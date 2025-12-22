@@ -102,17 +102,59 @@ export default function HolidayClosureAnnouncementPage() {
           box-shadow: 0 0 20px rgba(201, 169, 97, 0.6);
         }
 
-        .closure-item {
-          display: inline-block;
+        .calendar-grid {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr);
+          gap: 12px;
+          max-width: 500px;
+          margin: 0 auto 24px;
+        }
+
+        .calendar-date {
           ${isDark()
             ? 'background: rgba(251, 191, 36, 0.15); border: 2px solid rgba(251, 191, 36, 0.5);'
             : 'background: rgba(217, 119, 6, 0.08); border: 2px solid rgba(217, 119, 6, 0.3);'
           };
-          padding: 16px 24px;
-          border-radius: 10px;
-          margin: 8px;
+          padding: 20px 16px;
+          border-radius: 12px;
+          text-align: center;
+          transition: transform 0.2s;
+        }
+
+        .calendar-date:hover {
+          transform: translateY(-2px);
+        }
+
+        .date-number {
+          font-size: 2.5rem;
+          font-weight: 900;
+          line-height: 1;
+          margin-bottom: 4px;
+          ${isDark() ? 'color: #fbbf24;' : 'color: #d97706;'}
+        }
+
+        .date-month {
+          font-size: 0.9rem;
           font-weight: 600;
-          font-size: 1.1rem;
+          text-transform: uppercase;
+          letter-spacing: 0.05em;
+          margin-bottom: 8px;
+        }
+
+        .date-status {
+          font-size: 0.85rem;
+          font-weight: 500;
+          opacity: 0.9;
+        }
+
+        .info-box {
+          ${isDark()
+            ? 'background: rgba(139, 92, 246, 0.1); border: 2px solid rgba(139, 92, 246, 0.3);'
+            : 'background: rgba(124, 58, 237, 0.05); border: 2px solid rgba(124, 58, 237, 0.2);'
+          };
+          padding: 20px 24px;
+          border-radius: 12px;
+          margin-bottom: 16px;
         }
       `}</style>
 
@@ -158,32 +200,49 @@ export default function HolidayClosureAnnouncementPage() {
           </div>
 
           {/* Main Announcement */}
-          <div class="highlight-section" style="max-width: 90%;margin: auto;margin-bottom: 28px;">
+          <div class="highlight-section" style="max-width: 95%;margin: auto;margin-bottom: 24px;">
             <div class="text-center">
               <h2 class={`font-bold tracking-wide ${textColor()} text-2xl md:text-3xl mb-8 leading-tight`}>
                 Holiday Closure <span class={isDark() ? 'gradient-text' : 'gradient-text-light'}>Schedule</span>
               </h2>
 
-              <div class="mb-6 space-y-2">
-                <div class="closure-item">
-                  <span class={isDark() ? 'text-amber-300' : 'text-amber-700'}>Dec 24: Closing at 12:00 PM</span>
+              <div class="calendar-grid">
+                <div class="calendar-date">
+                  <div class="date-number">24</div>
+                  <div class={`date-month ${isDark() ? 'text-amber-300' : 'text-amber-700'}`}>December</div>
+                  <div class={`date-status ${secondaryColor()}`}>Closing at 12:00 PM</div>
                 </div>
-                <div class="closure-item">
-                  <span class={isDark() ? 'text-amber-300' : 'text-amber-700'}>Dec 25: Closed Whole Day</span>
+                <div class="calendar-date">
+                  <div class="date-number">25</div>
+                  <div class={`date-month ${isDark() ? 'text-amber-300' : 'text-amber-700'}`}>December</div>
+                  <div class={`date-status ${secondaryColor()}`}>Closed Whole Day</div>
                 </div>
-                <div class="closure-item">
-                  <span class={isDark() ? 'text-amber-300' : 'text-amber-700'}>Dec 31: Closed Whole Day</span>
+                <div class="calendar-date">
+                  <div class="date-number">31</div>
+                  <div class={`date-month ${isDark() ? 'text-amber-300' : 'text-amber-700'}`}>December</div>
+                  <div class={`date-status ${secondaryColor()}`}>Closed Whole Day</div>
                 </div>
-                <div class="closure-item">
-                  <span class={isDark() ? 'text-amber-300' : 'text-amber-700'}>Jan 1: Closed Whole Day</span>
+                <div class="calendar-date">
+                  <div class="date-number">1</div>
+                  <div class={`date-month ${isDark() ? 'text-amber-300' : 'text-amber-700'}`}>January</div>
+                  <div class={`date-status ${secondaryColor()}`}>Closed Whole Day</div>
                 </div>
               </div>
 
-              <p class={`${secondaryColor()} text-base md:text-lg leading-relaxed mx-auto font-normal mb-4`}>
-                We will be closing for the holidays to allow our team to celebrate with their families. Regular 24/7 operations will resume on January 2, 2025.
+              <div class="info-box">
+                <div class={`font-semibold ${isDark() ? 'text-purple-300' : 'text-purple-700'} text-sm mb-2`}>
+                  Regular Days
+                </div>
+                <p class={`${secondaryColor()} text-sm leading-relaxed`}>
+                  Front desk is available until <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>3:00 AM</span> on all other days. Please keep your door lock access code secure and accessible.
+                </p>
+              </div>
+
+              <p class={`${secondaryColor()} text-base leading-relaxed mx-auto font-normal mb-3`}>
+                Regular 24/7 operations will resume on January 2, 2025.
               </p>
 
-              <p class={`${secondaryColor()} text-base leading-relaxed mx-auto font-normal`}>
+              <p class={`${secondaryColor()} text-sm leading-relaxed mx-auto font-normal italic`}>
                 Thank you for your understanding and we wish you a joyful holiday season.
               </p>
             </div>
