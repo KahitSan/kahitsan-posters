@@ -230,11 +230,17 @@ export default function HolidayClosureAnnouncementPage() {
               </div>
 
               <div class="info-box">
-                <div class={`font-semibold ${isDark() ? 'text-purple-300' : 'text-purple-700'} text-sm mb-2`}>
-                  Regular Days
+                <div class={`font-semibold ${isDark() ? 'text-purple-300' : 'text-purple-700'} text-base mb-3`}>
+                  Regular Days - Still Open 24/7
                 </div>
-                <p class={`${secondaryColor()} text-sm leading-relaxed`}>
-                  Front desk is available until <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>3:00 AM</span> on all other days. Please keep your door lock access code secure and accessible.
+                <p class={`${secondaryColor()} text-sm leading-relaxed mb-2`}>
+                  Space remains <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>open 24/7</span> with door lock access.
+                </p>
+                <p class={`${secondaryColor()} text-sm leading-relaxed mb-2`}>
+                  Front desk is staffed until <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>3:00 AM</span> only.
+                </p>
+                <p class={`${secondaryColor()} text-sm leading-relaxed font-medium`}>
+                  Please book and settle payments before <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>2:30 AM</span>. Keep your door lock access code secure.
                 </p>
               </div>
 

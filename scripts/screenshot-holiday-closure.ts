@@ -2,7 +2,7 @@ import { chromium } from 'playwright'
 import { mkdir } from 'fs/promises'
 import { join } from 'path'
 
-const BASE_URL = 'http://localhost:5174'
+const BASE_URL = 'http://localhost:5173'
 const SCREENSHOT_DIR = 'screenshots/announcements/holiday-closure-2024-2025'
 
 async function generateScreenshots() {
