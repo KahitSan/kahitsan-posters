@@ -149,12 +149,12 @@ export default function HolidayClosureAnnouncementPage() {
 
         .info-box {
           ${isDark()
-            ? 'background: rgba(139, 92, 246, 0.1); border: 2px solid rgba(139, 92, 246, 0.3);'
-            : 'background: rgba(124, 58, 237, 0.05); border: 2px solid rgba(124, 58, 237, 0.2);'
+            ? 'background: rgba(139, 92, 246, 0.15); border: 2px solid rgba(139, 92, 246, 0.4);'
+            : 'background: rgba(124, 58, 237, 0.08); border: 2px solid rgba(124, 58, 237, 0.25);'
           };
-          padding: 20px 24px;
+          padding: 24px 28px;
           border-radius: 12px;
-          margin-bottom: 16px;
+          margin-bottom: 20px;
         }
       `}</style>
 
@@ -230,25 +230,25 @@ export default function HolidayClosureAnnouncementPage() {
               </div>
 
               <div class="info-box">
-                <div class={`font-semibold ${isDark() ? 'text-purple-300' : 'text-purple-700'} text-base mb-3`}>
+                <div class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'} text-lg mb-4`}>
                   Regular Days - Still Open 24/7
                 </div>
-                <p class={`${secondaryColor()} text-sm leading-relaxed mb-2`}>
+                <p class={`${textColor()} text-base leading-relaxed mb-3 font-medium`}>
                   Space remains <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>open 24/7</span> with door lock access.
                 </p>
-                <p class={`${secondaryColor()} text-sm leading-relaxed mb-2`}>
+                <p class={`${textColor()} text-base leading-relaxed mb-3 font-medium`}>
                   Front desk is staffed until <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>3:00 AM</span> only.
                 </p>
-                <p class={`${secondaryColor()} text-sm leading-relaxed font-medium`}>
+                <p class={`${textColor()} text-base leading-relaxed font-semibold`}>
                   Please book and settle payments before <span class={`font-bold ${isDark() ? 'text-purple-300' : 'text-purple-700'}`}>2:30 AM</span>. Keep your door lock access code secure.
                 </p>
               </div>
 
-              <p class={`${secondaryColor()} text-base leading-relaxed mx-auto font-normal mb-3`}>
+              <p class={`${textColor()} text-lg leading-relaxed mx-auto font-medium mb-4`}>
                 Regular 24/7 operations will resume on January 2, 2025.
               </p>
 
-              <p class={`${secondaryColor()} text-sm leading-relaxed mx-auto font-normal italic`}>
+              <p class={`${secondaryColor()} text-base leading-relaxed mx-auto font-normal italic`}>
                 Thank you for your understanding and we wish you a joyful holiday season.
               </p>
             </div>
