@@ -12,6 +12,7 @@
     "test:headed": "playwright test --headed",
     "test:report": "playwright show-report",
     "screenshot:announcements": "tsx scripts/screenshot-announcement.ts",
+    "screenshot:holiday": "tsx scripts/screenshot-holiday-closure.ts",
     "screenshot:monthly": "tsx scripts/screenshot-monthly-update.ts",
     "screenshot:all": "tsx scripts/screenshot-all.ts"
   },
