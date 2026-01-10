@@ -150,6 +150,21 @@ kahitsan-posters/
 5. Run dev server to preview
 6. Generate screenshots
 
+## Logo Usage Guidelines
+
+All poster pages must use the following logo convention:
+
+- **Light mode**: Use `LOGO-kahitsan.v2.svg`
+- **Dark mode**: Use `logo.png`
+
+Example imports (from `src/pages/announcements/`):
+```typescript
+import logoLight from '../../../assets/LOGO-kahitsan.v2.svg'
+import logoDark from '../../../assets/logo.png'
+```
+
+This ensures proper contrast and visibility across both display modes.
+
 ## Component Library
 
 This repo uses `pillar-ui` as a git submodule for shared components. To update:
