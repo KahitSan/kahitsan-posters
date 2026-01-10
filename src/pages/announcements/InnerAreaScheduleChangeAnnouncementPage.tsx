@@ -3,7 +3,7 @@ import { useSearchParams } from '@solidjs/router'
 import logoLight from '../../../assets/LOGO-kahitsan.v2.svg'
 import logoDark from '../../../assets/logo.png'
 
-export default function CleaningAnnouncementPage() {
+export default function InnerAreaScheduleChangeAnnouncementPage() {
   const [searchParams] = useSearchParams()
   const isDark = createMemo(() => searchParams.dark !== undefined)
 
@@ -35,14 +35,14 @@ export default function CleaningAnnouncementPage() {
           <div class="network-bg"></div>
 
           <div class="text-center mb-4">
-            <div class="mb-2">
-              <div class="text-gray-500 text-base font-medium">
-                Saturday, January 10, 2026
+            <div class="mb-1">
+              <div class={`tracking-widest font-black ${textColor()} text-2xl`}>
+                Schedule Update
               </div>
             </div>
-            <div class="mb-2">
-              <div class="tracking-widest font-black text-3xl">
-                Notice to All Coworkers
+            <div>
+              <div class={`font-normal ${mutedColor()} text-sm`}>
+                Effective <span class={`font-semibold ${isDark() ? 'text-amber-500' : 'text-amber-600'}`}>Jan 8, 2026</span>
               </div>
             </div>
           </div>
@@ -59,46 +59,32 @@ export default function CleaningAnnouncementPage() {
 
           <div class="text-center mb-5">
             <h2 class={`font-bold ${textColor()} text-2xl mb-4`}>
-              Cleaning Schedule
+              Inner Area Availability
             </h2>
 
-            <div class="grid grid-cols-2 gap-4 mb-5">
-              <div class={`${isDark() ? 'bg-zinc-800' : 'bg-gray-100'} rounded-lg p-4`}>
-                <div class="text-center">
-                  <div class="text-gray-500 text-lg">Regular</div>
-                  <div class={`${textColor()} text-base font-semibold`}>Coworking</div>
-                  <div class="text-sm mt-1">As usual</div>
-                </div>
-              </div>
-
-              <div class={`${isDark() ? 'bg-zinc-800' : 'bg-gray-100'} rounded-lg p-4`}>
-                <div class="text-center">
-                  <div class="text-gray-500 text-lg">Saturday</div>
-                  <div class={`${textColor()} text-base font-semibold`}>Closed</div>
-                  <div class="text-sm mt-1">For cleaning</div>
-                </div>
-              </div>
-
-              <div class={`${isDark() ? 'bg-zinc-800' : 'bg-gray-100'} rounded-lg p-4`}>
-                <div class="text-center">
-                  <div class="text-gray-500 text-lg">8 AM - 12 PM</div>
-                  <div class={`${textColor()} text-base font-semibold`}>Space</div>
-                  <div class="text-sm mt-1">Closed</div>
-                </div>
-              </div>
-
-              <div class={`${isDark() ? 'bg-zinc-800' : 'bg-gray-100'} rounded-lg p-4`}>
-                <div class="text-center">
-                  <div class="text-gray-500 text-lg">After 12 PM</div>
-                  <div class={`${textColor()} text-base font-semibold`}>Resume</div>
-                  <div class="text-sm mt-1">Operations</div>
-                </div>
+            <div class={`${isDark() ? 'bg-zinc-800' : 'bg-gray-100'} rounded-lg p-4 mb-4`}>
+              <div class="text-center">
+                <div class={`${textColor()} text-xl font-bold mb-2`}>Not Available</div>
+                <div class={`${isDark() ? 'text-red-400' : 'text-red-700'} text-2xl font-bold`}>7 AM - 4:30 PM</div>
               </div>
             </div>
 
-            <p class={`${mutedColor()} text-base leading-relaxed`}>
-              Regular coworking operations resume after the cleaning period.
+            <p class={`${textColor()} text-base mb-2`}>
+              Weekdays: Available after <span class={`font-bold ${isDark() ? 'text-green-400' : 'text-green-700'}`}>4:30 PM</span>
             </p>
+            <p class={`${textColor()} text-base mb-3`}>
+              <span class={`font-bold ${isDark() ? 'text-green-400' : 'text-green-700'}`}>All day</span> on weekends
+            </p>
+
+            <p class={`${mutedColor()} text-sm mb-4`}>
+              Until end of January or until further notice
+            </p>
+
+            <div class={`${isDark() ? 'bg-red-900/30' : 'bg-red-50'} rounded-lg p-4 text-left`}>
+              <p class={`text-base font-bold ${isDark() ? 'text-red-400' : 'text-red-700'}`}>
+                AUTHORIZATION REQUIRED: Do NOT enter Inner Area without proper authorization
+              </p>
+            </div>
           </div>
 
           <div class={`text-center pt-6 border-t ${isDark() ? 'border-zinc-700' : 'border-gray-200'}`}>
