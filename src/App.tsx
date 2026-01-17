@@ -8,6 +8,7 @@ import PricingCompact from './pages/pricing/PricingCompactPanganiban'
 import EarlyClosingDec21 from './pages/announcements/EarlyClosingDec21AnnouncementPage'
 import HolidayClosure from './pages/announcements/HolidayClosureAnnouncementPage'
 import CleaningAnnouncement from './pages/announcements/CleaningAnnouncementPage'
+import EarlyClosingJan17 from './pages/announcements/EarlyClosingJan17AnnouncementPage'
 
 const App: Component = () => {
   return (
@@ -22,6 +23,7 @@ const App: Component = () => {
       <Route path="/pricing/compact-panganiban" component={PricingCompact} />
 
       {/* Announcements */}
+      <Route path="/announcement/early-closing-jan-17" component={EarlyClosingJan17} />
       <Route path="/announcement/early-closing-dec-21" component={EarlyClosingDec21} />
       <Route path="/announcement/holiday-closure-2024-2025" component={HolidayClosure} />
       <Route path="/announcement/cleaning-jan-10-2026" component={CleaningAnnouncement} />
@@ -40,6 +42,7 @@ const App: Component = () => {
                 <li>/monthly-update/nov-2025-p1</li>
                 <li>/pricing/panganiban</li>
                 <li>/pricing/compact-panganiban</li>
+                <li>/announcement/early-closing-jan-17</li>
                 <li>/announcement/early-closing-dec-21</li>
                 <li>/announcement/holiday-closure-2024-2025</li>
                 <li>/announcement/cleaning-jan-10-2026</li>
