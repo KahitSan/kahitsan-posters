@@ -5,6 +5,9 @@ import MonthlyUpdateOct2025P2 from './pages/monthly-updates/MonthlyUpdatePageOct
 import MonthlyUpdateNov2025P1 from './pages/monthly-updates/MonthlyUpdatePageNov2025P1'
 import TestPricing from './pages/pricing/TestPricingPage'
 import PricingCompact from './pages/pricing/PricingCompactPanganiban'
+import PricingDaily from './pages/pricing/PricingDailyPage'
+import PricingPremium from './pages/pricing/PricingPremiumPage'
+import PricingPartners from './pages/pricing/PricingPartnersPage'
 import EarlyClosingDec21 from './pages/announcements/EarlyClosingDec21AnnouncementPage'
 import HolidayClosure from './pages/announcements/HolidayClosureAnnouncementPage'
 import CleaningAnnouncement from './pages/announcements/CleaningAnnouncementPage'
@@ -21,6 +24,9 @@ const App: Component = () => {
       {/* Pricing */}
       <Route path="/pricing/panganiban" component={TestPricing} />
       <Route path="/pricing/compact-panganiban" component={PricingCompact} />
+      <Route path="/pricing/daily" component={PricingDaily} />
+      <Route path="/pricing/premium" component={PricingPremium} />
+      <Route path="/pricing/partners" component={PricingPartners} />
 
       {/* Announcements */}
       <Route path="/announcement/early-closing-jan-17" component={EarlyClosingJan17} />
@@ -42,6 +48,9 @@ const App: Component = () => {
                 <li>/monthly-update/nov-2025-p1</li>
                 <li>/pricing/panganiban</li>
                 <li>/pricing/compact-panganiban</li>
+                <li>/pricing/daily</li>
+                <li>/pricing/premium</li>
+                <li>/pricing/partners</li>
                 <li>/announcement/early-closing-jan-17</li>
                 <li>/announcement/early-closing-dec-21</li>
                 <li>/announcement/holiday-closure-2024-2025</li>

@@ -16,6 +16,7 @@
     "screenshot:holiday": "tsx scripts/screenshot-holiday-closure.ts",
     "screenshot:monthly": "tsx scripts/screenshot-monthly-update.ts",
     "screenshot:cleaning": "tsx scripts/screenshot-cleaning-jan-10-2026.ts",
+    "screenshot:pricing": "tsx scripts/screenshot-pricing-posters.ts",
     "screenshot:all": "tsx scripts/screenshot-all.ts"
   },
   "dependencies": {
