@@ -214,7 +214,7 @@ export default function ClosureApr2AnnouncementPage() {
           font-weight: 600;
           letter-spacing: 2px;
           text-transform: uppercase;
-          color: ${isDark() ? 'rgba(201, 169, 97, 0.8)' : 'rgba(180, 140, 50, 0.9)'};
+          color: ${isDark() ? 'rgba(201, 169, 97, 0.8)' : '#78350f'};
           margin-bottom: 8px;
         }
 
@@ -223,7 +223,9 @@ export default function ClosureApr2AnnouncementPage() {
           font-weight: 900;
           line-height: 1;
           letter-spacing: -2px;
-          background: linear-gradient(135deg, #C9A961 0%, #E5D4A1 40%, #C9A961 100%);
+          background: ${isDark() 
+            ? 'linear-gradient(135deg, #C9A961 0%, #E5D4A1 40%, #C9A961 100%)'
+            : 'linear-gradient(135deg, #b4944b 0%, #d4b853 40%, #b4944b 100%)'};
           -webkit-background-clip: text;
           -webkit-text-fill-color: transparent;
           background-clip: text;
@@ -233,7 +235,7 @@ export default function ClosureApr2AnnouncementPage() {
         .date-month {
           font-size: 16px;
           font-weight: 600;
-          color: ${isDark() ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.5)'};
+          color: ${isDark() ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.7)'};
           text-transform: uppercase;
           letter-spacing: 1px;
         }
