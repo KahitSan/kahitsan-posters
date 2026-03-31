@@ -107,17 +107,17 @@ export default function ClosureApr2AnnouncementPage() {
           flex-direction: column;
           align-items: center;
           justify-content: center;
-          padding: 60px;
+          padding: 36px 40px;
           text-align: center;
         }
 
         /* Logo */
         .logo-container {
-          margin-bottom: 32px;
+          margin-bottom: 24px;
         }
 
         .logo {
-          height: 72px;
+          height: 88px;
           width: auto;
           filter: ${isDark() ? 'brightness(1)' : 'brightness(0.9)'};
         }
@@ -131,9 +131,9 @@ export default function ClosureApr2AnnouncementPage() {
           ? 'rgba(251, 191, 36, 0.12)'
           : 'rgba(217, 119, 6, 0.08)'};
           border: 1.5px solid ${isDark() ? 'rgba(251, 191, 36, 0.35)' : 'rgba(217, 119, 6, 0.25)'};
-          padding: 10px 24px;
+          padding: 12px 28px;
           border-radius: 100px;
-          margin-bottom: 28px;
+          margin-bottom: 24px;
           backdrop-filter: blur(10px);
         }
 
@@ -151,7 +151,7 @@ export default function ClosureApr2AnnouncementPage() {
         }
 
         .notice-text {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 600;
           letter-spacing: 0.5px;
           color: ${isDark() ? '#fbbf24' : '#b45309'};
@@ -160,10 +160,10 @@ export default function ClosureApr2AnnouncementPage() {
 
         /* Main headline */
         .headline {
-          font-size: 48px;
+          font-size: 64px;
           font-weight: 800;
-          line-height: 1.15;
-          margin-bottom: 40px;
+          line-height: 1.1;
+          margin-bottom: 36px;
           color: ${isDark() ? '#ffffff' : '#1a1a1a'};
         }
 
@@ -177,9 +177,9 @@ export default function ClosureApr2AnnouncementPage() {
         /* Calendar dates grid */
         .dates-container {
           position: relative;
-          margin-bottom: 40px;
+          margin-bottom: 36px;
           width: 100%;
-          max-width: 620px;
+          max-width: 780px;
         }
 
         .dates-glow {
@@ -195,7 +195,7 @@ export default function ClosureApr2AnnouncementPage() {
           position: relative;
           display: grid;
           grid-template-columns: repeat(3, 1fr);
-          gap: 16px;
+          gap: 20px;
         }
 
         .date-card {
@@ -204,13 +204,13 @@ export default function ClosureApr2AnnouncementPage() {
           : 'linear-gradient(135deg, rgba(201, 169, 97, 0.15) 0%, rgba(201, 169, 97, 0.05) 100%)'};
           border: 1.5px solid ${isDark() ? 'rgba(201, 169, 97, 0.35)' : 'rgba(201, 169, 97, 0.3)'};
           border-radius: 20px;
-          padding: 24px 16px;
+          padding: 28px 20px;
           backdrop-filter: blur(20px);
           text-align: center;
         }
 
         .date-day {
-          font-size: 13px;
+          font-size: 15px;
           font-weight: 600;
           letter-spacing: 2px;
           text-transform: uppercase;
@@ -219,7 +219,7 @@ export default function ClosureApr2AnnouncementPage() {
         }
 
         .date-number {
-          font-size: 56px;
+          font-size: 72px;
           font-weight: 900;
           line-height: 1;
           letter-spacing: -2px;
@@ -231,7 +231,7 @@ export default function ClosureApr2AnnouncementPage() {
         }
 
         .date-month {
-          font-size: 14px;
+          font-size: 16px;
           font-weight: 600;
           color: ${isDark() ? 'rgba(255, 255, 255, 0.6)' : 'rgba(0, 0, 0, 0.5)'};
           text-transform: uppercase;
@@ -240,12 +240,12 @@ export default function ClosureApr2AnnouncementPage() {
 
         /* Description */
         .description {
-          max-width: 600px;
-          font-size: 18px;
+          max-width: 700px;
+          font-size: 20px;
           font-weight: 400;
           line-height: 1.7;
           color: ${isDark() ? 'rgba(255, 255, 255, 0.7)' : 'rgba(0, 0, 0, 0.6)'};
-          margin-bottom: 40px;
+          margin-bottom: 32px;
         }
 
         .description strong {
@@ -262,14 +262,14 @@ export default function ClosureApr2AnnouncementPage() {
         }
 
         .footer-thanks {
-          font-size: 16px;
+          font-size: 18px;
           font-weight: 500;
           font-style: italic;
           color: ${isDark() ? 'rgba(201, 169, 97, 0.6)' : 'rgba(180, 140, 50, 0.7)'};
         }
 
         .footer-signature {
-          font-size: 18px;
+          font-size: 20px;
           font-weight: 700;
           letter-spacing: 4px;
           text-transform: uppercase;
@@ -279,38 +279,38 @@ export default function ClosureApr2AnnouncementPage() {
         /* Decorative corner accents */
         .corner {
           position: absolute;
-          width: 120px;
-          height: 120px;
+          width: 100px;
+          height: 100px;
           border: 2px solid ${isDark() ? 'rgba(201, 169, 97, 0.2)' : 'rgba(201, 169, 97, 0.15)'};
         }
 
         .corner-tl {
-          top: 40px;
-          left: 40px;
+          top: 24px;
+          left: 24px;
           border-right: none;
           border-bottom: none;
           border-top-left-radius: 24px;
         }
 
         .corner-tr {
-          top: 40px;
-          right: 40px;
+          top: 24px;
+          right: 24px;
           border-left: none;
           border-bottom: none;
           border-top-right-radius: 24px;
         }
 
         .corner-bl {
-          bottom: 40px;
-          left: 40px;
+          bottom: 24px;
+          left: 24px;
           border-right: none;
           border-top: none;
           border-bottom-left-radius: 24px;
         }
 
         .corner-br {
-          bottom: 40px;
-          right: 40px;
+          bottom: 24px;
+          right: 24px;
           border-left: none;
           border-top: none;
           border-bottom-right-radius: 24px;
