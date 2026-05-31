@@ -11,6 +11,7 @@ import PricingPartners from './pages/pricing/PricingPartnersPage'
 import EarlyClosingDec21 from './pages/announcements/EarlyClosingDec21AnnouncementPage'
 import HolidayClosure from './pages/announcements/HolidayClosureAnnouncementPage'
 import CleaningAnnouncement from './pages/announcements/CleaningAnnouncementPage'
+import BookingHours from './pages/announcements/BookingHoursAnnouncementPage'
 import EarlyClosingJan17 from './pages/announcements/EarlyClosingJan17AnnouncementPage'
 
 const App: Component = () => {
@@ -33,6 +34,7 @@ const App: Component = () => {
       <Route path="/announcement/early-closing-dec-21" component={EarlyClosingDec21} />
       <Route path="/announcement/holiday-closure-2024-2025" component={HolidayClosure} />
       <Route path="/announcement/cleaning-jan-10-2026" component={CleaningAnnouncement} />
+      <Route path="/announcement/booking-hours" component={BookingHours} />
 
       {/* Default/Home */}
       <Route path="/" component={() => (
@@ -55,6 +57,7 @@ const App: Component = () => {
                 <li>/announcement/early-closing-dec-21</li>
                 <li>/announcement/holiday-closure-2024-2025</li>
                 <li>/announcement/cleaning-jan-10-2026</li>
+                <li>/announcement/booking-hours</li>
               </ul>
             </div>
           </div>
